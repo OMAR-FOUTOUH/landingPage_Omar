@@ -1,5 +1,4 @@
 /* google font */
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --primary-color:  #085BE5;
@@ -104,6 +103,7 @@ button.white {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 2px;
 }
 #navbar .credentials {
   display: flex;
@@ -129,6 +129,12 @@ button.white {
   font-weight: 600;
   color: #1a1a1a;
   transition: all 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 19.36px;
+text-align: left;
+
 }
 #navbar li a:hover,
 #navbar li a.active {
@@ -144,27 +150,24 @@ button.white {
   bottom: -4px;
   left: 20px;
 }
-/* #navbar li:nth-child(7)  {
-  width: 140px;
-  height: 35px;
 
-  gap: 0px;
-  opacity: 0px;
-  background-color: #000;
-  color: white;
-  padding: 6px;
-  margin-right: 0;
-} */
-#signup {
-  background-color: #000;
-  width: 130px;
-  height: 60px;
- display: inline-block;
-  gap: 0px;
-  opacity: 0px;
-  border-radius: 30%;
-  
- }
+ .signup-btn {
+  background-color: black; /* Green color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+ 
+  display: block;
+  height: 50px;
+padding-top: 10px;
+}
+
+.signup-btn:hover {
+  background-color: var(--primary-color); /* Darker green on hover */
+}
  #signup {
  color: white;
   padding: 10px 20px;
@@ -263,7 +266,7 @@ font-weight: bold; /* Make the heading text bold */
     background-color: #085BE5;
   }
   .hero-button p {
-    font-family: Inter;
+    font-family: Arial, Helvetica, sans-serif;
 font-size: 32px;
 font-weight: 700;
 line-height: 38.73px;
@@ -336,7 +339,6 @@ color: white;
   height: 656px;
 gap: 0px;
 opacity: 0px;
-
 display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
@@ -425,10 +427,9 @@ opacity: 0px;
 }
 .sectio4-h3 h3{
   font-size: 2.5rem;
-    /* padding-bottom: 1rem; */
-    text-align: center;
-    padding-bottom: 200px;
-    padding-top: 100px;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 .image-description {
   display: flex;
@@ -497,6 +498,10 @@ padding: 0px 30px 60px 30px;
   border-radius: 30px;
   margin: 10px;
 }
+.join-section {
+transform: translateY(10px);
+}
+
 .top-join{
   display: flex;
   gap: 20px; 
@@ -513,11 +518,10 @@ padding: 0px 30px 60px 30px;
 }
 
 .join-section button {
-  font-family: Inter;
+  font-family: Arial, Helvetica, sans-serif;
 font-size: 32px;
 font-weight: 700;
 line-height: 38.73px;
-
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -527,7 +531,11 @@ line-height: 38.73px;
   position: relative;
   bottom: -580px;
 }
+.join-section:hover {
+transform:translatey(15px);
 
+
+}
 .join-section button:hover {
   background-color: #0062cc;
 }
@@ -581,7 +589,7 @@ opacity: 0px;
   justify-content: space-between;
   flex-direction: column;
   background-color:  #D5E1E1;
-  ;
+  
   
 }
 .contenue {
@@ -642,7 +650,7 @@ opacity: 0px;
       flex-direction: column;
       text-align: center;
       width: 100%;
-height: 300px;
+      height: 300px;
 
 gap: 0px;
 opacity: 0px;
@@ -676,7 +684,7 @@ opacity: 0px;
 }
 .hidden2{
   opacity: 0;
-  filter: blur(5px);
+  filter: blur(3px);
   transform: translatey(100%);
   transition: all 1.5s;
 }
